@@ -7,6 +7,11 @@
 </head>
 <body>
     <div id="container"></div>
+    <div id="container2"></div>
     <script type="module" src="twitch_chat.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script type="module" src="youtube_chat.js"></script>
+    <button onclick="authenticate().then(loadClient)">authorize and load</button>
+    <button onclick="execute()">execute</button>
 </body>
 </html>

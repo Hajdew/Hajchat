@@ -48,11 +48,11 @@ socket.addEventListener('message', event => {
         const get_nick = text_from_chat.slice(get_nick_start+13,get_nick_stop);
         
         if (get_nick.includes("d :")) {
-            document.write(`<p> <img src="/images/TwitchGlitchPurple.svg" alt="Twitch logo" width=${image_size} height=${image_size}> ${get_nick} : ${message}</p>`);
+            document.write(`<p> <img src="/images/TwitchGlitchPurple.svg" alt="Twitch logo" width=${image_size} height=${image_size} style="margin-top:2px;margin-bottom:2px"> ${get_nick} : ${message} </p>`);
             window.scrollTo(0, document.body.scrollHeight);
         }
         else {
-            document.write(`<p> <img src="/images/TwitchGlitchPurple.svg" alt="Twitch logo" width=${image_size} height=${image_size}> ${get_nick} : ${message}</p>`);
+            document.write(`<p> <img src="/images/TwitchGlitchPurple.svg" alt="Twitch logo" width=${image_size} height=${image_size} style="margin-top:2px;margin-bottom:2px"> ${get_nick} : ${message} </p>`);
             window.scrollTo(0, document.body.scrollHeight);
         }
 
